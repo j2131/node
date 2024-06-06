@@ -3,7 +3,6 @@ const app = express()
 const port = 3000
 const path = require('path');
 
-app.use(loggerMiddleware);
 
 // 静的ファイルの提供とキャッシュの有効化
 app.use(express.static('public', { maxAge: 86400000 }));
